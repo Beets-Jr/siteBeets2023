@@ -29,15 +29,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Grid */
-body {
-    padding: 2rem 8rem;
-}
-
-section {
-    padding: 2rem 0rem;
-}
-
 /* Tamanho dos Títulos */
 h1 { font-size: 3rem; }
 h2 { font-size: 2rem; }

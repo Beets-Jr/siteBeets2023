@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
+    <link rel="stylesheet" href="./styles/home/home-hero.css">
+    <link rel="stylesheet" href="./styles/home/home-servicos.css">
+    <link rel="stylesheet" href="./styles/home/home-contato.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -22,11 +26,20 @@
 
     <header>  
         <div id="logo">
-
+            <div>
+                <img src="./assets/logo-sem-fundo.svg" alt="Beets Jr" height="32">
+            </div>
+            
+            <div>
+                <a href="./index.html"><h1>Beets Js.</h1></a>
+            </div>
         </div>
 
         <nav id="menu">
-
+            <ul> 
+                <li><a href="#">Home</a><div class="menu-line"></div></li>
+                <li><a href="./quemSomos.html">Quem Somos</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -41,7 +54,7 @@
     <!-- ----------------------------- -->
 
     <section id="servicos">
-        <h2>Serviços</h2>
+         <h2>Serviços</h2>
     </section>
 
     <!-- ----------------------------- -->
@@ -52,17 +65,36 @@
 
     <!-- Conteúdo do Footer -->
 
-    <footer>
-        <div id="logo-footer">
-
-        </div>
-
+    <footer>    
         <nav id="menu-footer">
-
+            <h3>Links rápidos</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./quemSomos.html">Quem Somos</a></li>
+            </ul>
         </nav>
 
+        <div id="logo-footer">
+            <div id="logo">
+                <div>
+                    <img src="./assets/logo-cores-invertida.svg" alt="Beets Jr" height="64">
+                </div>
+                
+                <div>
+                    <a href="./index.html"><h2>Beets Js.</h2></a>
+                </div>
+            </div>
+        </div>
+    
         <div id="contatos-footer">
-
+            <h3>Informações de contato</h3>
+            <p>Sorocaba - SP - Brasil</p>
+            <div id="redes-sociais-footer">
+                <img src="./assets/instagram.svg" alt="Instagram" height="30">
+                <img src="./assets/facebook.svg" alt="Facebook" height="30">
+                <img src="./assets/GitHub.svg" alt="GitHub" height="30">
+                <img src="./assets/linkedin.svg" alt="Linkedin" height="30">
+            </div>
         </div>
     </footer>
 

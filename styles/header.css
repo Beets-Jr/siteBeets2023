@@ -1,0 +1,74 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width: 100%;
+    padding: 2rem 8rem;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 1.375rem;
+    margin: 0;
+    padding: 0rem 0rem 0rem 0.5rem;
+
+    text-decoration: none;
+    color: var(--beterraba);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header nav ul, header li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--beterraba);
+    padding: 0.625rem;
+}
+
+header nav a:hover,
+header nav a.active {
+  font-weight: 800;
+}
+
+#menu ul li {
+    list-style: none;
+    margin-bottom: 10px; /* Espaço entre os itens do menu */
+    position: relative;
+}
+
+.menu-line {
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajuste a espessura da linha conforme necessário */
+    width: 100%;
+    height: 1px; /* Altura da linha */
+    background-color:var(--beterraba); /* Substitua SEU_COR_AQUI pela cor desejada */
+}
+
+
