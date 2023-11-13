@@ -37,6 +37,23 @@
     font-weight: 90;
 }
 
+.botao-hero {
+    display: inline-flex;
+    padding: 12px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+    border-radius: 50px;
+    background: white;
+    color: var(--beterraba);
+}
+
+.botao-hero:hover {
+    background: var(--verde);
+}
+
 .imagem-hero {
     padding: 0rem 3.5rem 0rem 0rem;
 }
