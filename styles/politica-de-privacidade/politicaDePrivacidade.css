@@ -1,0 +1,30 @@
+#privacidade {
+    background-color:white;
+    margin-top: 5rem;
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+#privacidade h1 {
+    text-align: center;
+}
+
+#privacidade h2 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-size: 24px;
+}
+
+#privacidade h1, #privacidade h2 {
+    color: var(--beterraba);
+}
+
+#privacidade p {
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-size: 14px;
+    font-weight: 90;
+}
