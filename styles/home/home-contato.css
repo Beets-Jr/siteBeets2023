@@ -1,3 +1,95 @@
 #contato {
     padding: 2rem 8rem;
+    color: var(--cinza-claro);
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.contato-bg {
+    background-color: var(--beterraba-media);
+    border-radius: 0.7rem;
+    padding: 3rem 7rem;
+}
+
+.contato-parte1 {
+    width: 50%;
+}
+
+#contato h2 {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+#contato p {
+    font-weight: 90;
+}
+
+.contato-subtitulo {
+    font-weight: 90;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contato-subtitulo p {
+    margin-bottom: 1rem;
+}
+
+.contatos {
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.contatos div {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contatos img {
+    margin-right: 1rem;
+}
+
+.contato-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 3rem;
+    padding-left: 10px;
+}
+
+.contato-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.contato-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--verde);
+    border-radius: 50px;
+    padding: 12px 35px;
+    gap: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.contato-whatsapp {
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/whatsapp.svg');
+    background-size:cover;
+    display:block;
+}
+
+
+.contato-btn:hover {
+    background: white;
+    color: var(--beterraba-media);
+}
+
+.contato-btn:hover .contato-whatsapp {
+    background-image:url('../../assets/whatsapp-beterraba.svg');
 }
