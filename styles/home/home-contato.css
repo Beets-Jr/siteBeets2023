@@ -35,6 +35,14 @@
     margin-bottom: 1rem;
 }
 
+.contato-subtitulo a:link {
+    color: var(--cinza-claro);
+}
+
+.contato-subtitulo a:visited {
+    color: var(--cinza-claro);
+}
+
 .contatos {
     margin-bottom: 2rem;
     width: 50%;
@@ -89,8 +97,10 @@
 .contato-btn:hover {
     background: white;
     color: var(--beterraba-media);
+    transition: 250ms linear;
 }
 
 .contato-btn:hover .contato-whatsapp {
     background-image:url('../../assets/whatsapp-beterraba.svg');
+    transition: 250ms linear;
 }
