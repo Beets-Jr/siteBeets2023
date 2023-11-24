@@ -83,6 +83,7 @@
     font-weight: 600;
     cursor: pointer;
     color: white;
+    transition: 250ms linear;
 }
 
 .contato-whatsapp {
@@ -91,8 +92,8 @@
     background-image: url('../../assets/whatsapp.svg');
     background-size:cover;
     display:block;
+    transition: 250ms linear;
 }
-
 
 .contato-btn:hover {
     background: white;
