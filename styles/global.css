@@ -17,9 +17,11 @@ html {
     --beterraba-media: #890069;
 
     --verde: #9BBB59;
+    --verde-claro: #D7DEC7;
+
 
     --cinza-escuro: #353535;
-    --cinza-claro: #F6F6F6;  
+    --cinza-claro: #F6F6F6;
 }
 
 /* Definição da fonte */
@@ -30,9 +32,19 @@ body {
 }
 
 /* Tamanho dos Títulos */
-h1 { font-size: 3rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
 
 /* Tamanho dos Textos dos parágrafos */
-p { font-size: 1rem; }
+p {
+    font-size: 1rem;
+}
