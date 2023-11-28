@@ -25,20 +25,24 @@
 <body>
     <!-- Conteúdo do Header | Home-->
 
-    <header>  
+    <header>
         <div id="logo">
             <div>
                 <img src="./assets/logo-sem-fundo.svg" alt="Beets Jr" height="32">
             </div>
-            
+
             <div>
-                <a href="./index.html"><h1>Beets Jr.</h1></a>
+                <a href="./index.html">
+                    <h1>Beets Jr.</h1>
+                </a>
             </div>
         </div>
 
         <nav id="menu">
-            <ul> 
-                <li><a href="#">Home</a><div class="menu-line"></div></li>
+            <ul>
+                <li><a href="#">Home</a>
+                    <div class="menu-line"></div>
+                </li>
                 <li><a href="./quemSomos.html">Quem Somos</a></li>
                 <li><a href="./politicaDePrivacidade.html">Política de Privacidade</a></li>
             </ul>
@@ -52,10 +56,10 @@
             <div>
                 <h1>O SEU SITE,</h1>
                 <h2>idealize e desenvolva</h2>
-    
-                <p>Impulsione o seu negócio com um site personalizado, construímos o seu website com 
-                    base em suas necessidades. Somos uma empresa júnior de Ciência da Computação 
-                    na UFSCar Sorocaba, organização sem fins lucrativos formada por estudantes, 
+
+                <p>Impulsione o seu negócio com um site personalizado, construímos o seu website com
+                    base em suas necessidades. Somos uma empresa júnior de Ciência da Computação
+                    na UFSCar Sorocaba, organização sem fins lucrativos formada por estudantes,
                     que investe todo o lucro no aprendizado profissional e pessoal de nossos membros.
                 </p>
 
@@ -63,10 +67,9 @@
                     Conheça nossos serviços
                 </div>
             </div>
-            
+
             <div class="imagem-hero">
-                <img src="./assets/hero-img.svg"
-                alt="Pessoas construindo um site">
+                <img src="./assets/hero-img.svg" alt="Pessoas construindo um site">
             </div>
         </div>
     </section>
@@ -74,8 +77,56 @@
     <!-- ----------------------------- -->
 
     <section id="servicos">
-         <h2>Serviços</h2>
-         
+        <div class="servicos-container">
+            <h1>Serviços</h1>
+            <h2>Desenvolvemos <span class="destaque-1">sites institucionais</span> para o seu negócio, grupo, amigos, família, pet ou <span class="destaque-2">quem precisar</span>!</h2>
+            <div class="servicos-menores">
+                <div class="item-1">
+                    <div class="automacoes">
+                        <div class="imagem">
+                            <img src="./assets/automacoes.svg" alt="Automações">
+                        </div>
+                        <div class="texto">
+                            <h3>Automações</h3>
+                            <p>Aumento de produtividade através de automações de tarefas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="prototipagem">
+                        <div class="imagem">
+                            <img src="./assets/prototipagem.svg" alt="Prototipagem">
+                        </div>
+                        <div class="texto">
+                            <h3>Prototipagem</h3>
+                            <p>Design do site de acordo com a sua identidade visual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <div class="desenvolvimento">
+                        <div class="imagem">
+                            <img src="./assets/desenvolvimento.svg" alt="Desenvolvimento">
+                        </div>
+                        <div class="texto">
+                            <h3>Desenvolvimento</h3>
+                            <p>Implementação das páginas web e funcionalidades</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <div class="assistencia">
+                        <div class="imagem">
+                            <img src="./assets/assistencia.svg" alt="Assistência">
+                        </div>
+                        <div class="texto">
+                            <h3>Assistência</h3>
+                            <p>Pré e pós venda, acompanhamento e possíveis aprimoramentos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
   <!-- ----------------------------- -->
@@ -209,7 +260,7 @@
     <!-- ----------------------------- -->
 
     <section id="contato">
-        <div class="contato-bg"> 
+        <div class="contato-bg">
             <div class="contato-parte1"> <!-- Parte esquerda, sem contar o formulário -->
                 <h2>Contato</h2>
                 <div class="contato-subtitulo">
@@ -239,12 +290,36 @@
                     </div>
                 </a>
             </div>
-        </div>
+            <div class="contato-parte2">
+                <div class="formurario-titulo">
+                    <img src="./assets/formulario.svg">
+                    <h3>Formulário</h3>
+                </div>
+                <div class="formulario">
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="contato-mensagem" name="mensagem" required></textarea>
+
+                        <div class="contato-enviar">
+                            <button type="submit" class="enviar-btn">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
     </section>
 
     <!-- Conteúdo do Footer -->
 
-    <footer>    
+    <footer>
         <nav id="menu-footer">
             <h3>Links rápidos</h3>
             <ul>
@@ -259,13 +334,15 @@
                 <div>
                     <img src="./assets/logo-cores-invertida.svg" alt="Beets Jr" height="64">
                 </div>
-                
+
                 <div>
-                    <a href="./index.html"><h2>Beets Jr.</h2></a>
+                    <a href="./index.html">
+                        <h2>Beets Jr.</h2>
+                    </a>
                 </div>
             </div>
         </div>
-    
+
         <div id="contatos-footer">
             <h3>Informações de contato</h3>
             <p>Sorocaba - SP - Brasil</p>
@@ -280,4 +357,5 @@
 
     <!-- Fim da página Home -->
 </body>
+
 </html>
