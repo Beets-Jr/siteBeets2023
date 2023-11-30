@@ -17,9 +17,10 @@
 }
 
 #hero h1 {
-    padding-bottom: 0.5rem;
+    /*padding-bottom: 0.5rem;*/
     padding-top: 2rem;
     color: white;
+    font-size: 72px;
 }
 
 #hero h2 {
@@ -27,6 +28,7 @@
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--beterraba-clara);
+    font-size: 60px;
 }
 
 #hero p {
