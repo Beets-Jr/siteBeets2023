@@ -3,6 +3,7 @@
     margin-top: 5rem;
     width: 100%;
     padding: 1rem 1rem;
+    padding-bottom: 4rem;
 }
 
 #privacidade h1 {
@@ -13,6 +14,7 @@
     padding-left: 7rem;
     padding-right: 7rem;
     font-size: 24px;
+    padding-top: 1rem;
 }
 
 #privacidade h1, #privacidade h2 {
@@ -20,11 +22,29 @@
 }
 
 #privacidade p {
-    color: black;
     padding-top: 1rem;
+}
+
+#privacidade p, #privacidade ol{
+    color: black;
     padding-bottom: 1rem;
     padding-left: 7rem;
     padding-right: 7rem;
     font-size: 14px;
     font-weight: 90;
+    text-align: justify;
+}
+
+#privacidade li {
+    list-style: decimal inside;
+    text-indent: -1rem;
+    padding-left: 2rem;
+}
+
+#privacidade a:link {
+    color: black;
+}
+
+#privacidade a:visited {
+    color: black;
 }
