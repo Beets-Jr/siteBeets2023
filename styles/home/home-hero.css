@@ -52,8 +52,17 @@
     color: var(--beterraba);
 }
 
+.botao-hero a{
+    text-decoration: none;
+    color: var(--beterraba);
+}
+
 .botao-hero:hover {
     background: var(--verde);
+}
+
+.botao-hero a:hover {
+    color: white;
 }
 
 .imagem-hero {
