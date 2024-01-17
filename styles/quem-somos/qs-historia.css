@@ -1,3 +1,51 @@
 #nossa-historia {
     padding: 2rem 8rem;
 }
+
+#reconhecimentos {
+    background-image: url(../../assets/reconhecimento-fundo.svg);
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+}
+
+
+.reconhecimentos-titulo {
+    padding: 3rem 8rem;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.reconhecimentos-itens {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem 3rem 8rem;
+}
+
+.item {
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.item p {
+    font-size: 1.2em;
+}
+
+.reconhecimento-imagem {
+    background-color: white;
+    width: 65%;
+    border: 2px solid var(--verde);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+.img {
+    width: 90%;
+    height: 90%;
+}
