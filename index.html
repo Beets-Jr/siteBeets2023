@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="./styles/home/home-hero.css">
     <link rel="stylesheet" href="./styles/home/home-servicos.css">
+    <link rel="stylesheet" href="./styles/home/home-como-funciona.css">
     <link rel="stylesheet" href="./styles/home/home-contato.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,21 +25,32 @@
 <body>
     <!-- Conteúdo do Header | Home-->
 
-    <header>  
+    <header>
         <div id="logo">
             <div>
-                <img src="./assets/logo-sem-fundo.svg" alt="Beets Jr" height="32">
+                <img src="./assets/logo-sem-fundo.svg" alt="Beets Jr." height="32">
             </div>
-            
+
             <div>
-                <a href="./index.html"><h1>Beets Jr.</h1></a>
+                <a href="./index.html">
+                    <h1>Beets Jr.</h1>
+                </a>
             </div>
         </div>
 
-        <nav id="menu">
-            <ul> 
-                <li><a href="#">Home</a><div class="menu-line"></div></li>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a>
+                    <div class="menu-line"></div>
+                </li>
                 <li><a href="./quemSomos.html">Quem Somos</a></li>
+                <li><a href="./politicaDePrivacidade.html">Política de Privacidade</a></li>
             </ul>
         </nav>
     </header>
@@ -46,31 +58,292 @@
     <!-- Conteúdo da página Home -->
 
     <section id="hero">
-        <h1>Home</h1>
+        <div class="background">
+            <div>
+                <h1>O SEU SITE,</h1>
+                <h2>idealize e desenvolva</h2>
 
-        <p>Texto em p</p>
+                <p>Impulsione o seu negócio com um site personalizado, construímos o seu website com
+                    base em suas necessidades. Somos uma empresa júnior de Ciência da Computação
+                    na UFSCar Sorocaba, organização sem fins lucrativos formada por estudantes,
+                    que investe todo o lucro no aprendizado profissional e pessoal de nossos membros.
+                </p>
+
+                <div class="botao-hero">
+                    <a href="#servicos">Conheça nossos serviços</a>
+                </div>
+            </div>
+
+            <div class="imagem-hero">
+                <img src="./assets/hero-img.svg" alt="Pessoas construindo um site">
+            </div>
+        </div>
     </section>
 
     <!-- ----------------------------- -->
 
     <section id="servicos">
-         <h2>Serviços</h2>
+        <div class="servicos-container">
+            <h1>Serviços</h1>
+            <h2>Desenvolvemos <span class="destaque-1">sites institucionais</span> para o seu negócio, grupo, amigos,
+                família, pet ou <span class="destaque-2">quem precisar</span>!</h2>
+            <div class="servicos-menores">
+                <div class="item-1">
+                    <div class="automacoes">
+                        <div class="imagem">
+                            <img src="./assets/automacoes.svg" alt="Automações">
+                        </div>
+                        <div class="texto">
+                            <h3>Automações</h3>
+                            <p>Aumento de produtividade através de automações de tarefas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="prototipagem">
+                        <div class="imagem">
+                            <img src="./assets/prototipagem.svg" alt="Prototipagem">
+                        </div>
+                        <div class="texto">
+                            <h3>Prototipagem</h3>
+                            <p>Design do site de acordo com a sua identidade visual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <div class="desenvolvimento">
+                        <div class="imagem">
+                            <img src="./assets/desenvolvimento.svg" alt="Desenvolvimento">
+                        </div>
+                        <div class="texto">
+                            <h3>Desenvolvimento</h3>
+                            <p>Implementação das páginas web e funcionalidades</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <div class="assistencia">
+                        <div class="imagem">
+                            <img src="./assets/assistencia.svg" alt="Assistência">
+                        </div>
+                        <div class="texto">
+                            <h3>Assistência</h3>
+                            <p>Pré e pós venda, acompanhamento e possíveis aprimoramentos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ----------------------------- -->
 
+    <section id="como-funciona">
+        <h2 class="como-funciona-top">Como Funciona?</h2>
+        <details class="como-funciona-list">
+            <summary>
+                <div class="como-funciona-titulo">
+                    Diagnóstico Inicial
+                </div>
+                <div class="como-funciona-subtitulo">
+                    Análise das necessidades, possibilidades de serviços e os métodos de desenvolver
+                </div>
+            </summary>
+            <ul class="como-funciona-detail">
+                <li>
+                    Solicitação de Orçamentos
+                </li>
+                <li>
+                    Especificação do Projeto
+                </li>
+                <li>
+                    Proposta Inicial do Site
+                </li>
+                <li>
+                    Precificação Abaixo do Mercado
+                </li>
+            </ul>
+        </details>
+        <details class="como-funciona-list">
+            <summary>
+                <div class="como-funciona-titulo">
+                    Alinhamento
+                </div>
+                <div class="como-funciona-subtitulo">
+                    Apresentação do protótipo, passível de ajuste
+                </div>
+            </summary>
+            <ul class="como-funciona-detail">
+                <li>
+                    Cronograma de Desenvolvimento
+                </li>
+                <li>
+                    Feedback
+                </li>
+                <li>
+                    Acompanhamento
+                </li>
+                <li>
+                    Início da Implementação
+                </li>
+            </ul>
+        </details>
+        <details class="como-funciona-list">
+            <summary>
+                <div class="como-funciona-titulo">
+                    Desenvolvimento
+                </div>
+                <div class="como-funciona-subtitulo">
+                    Implementação do Site, com entregas parciais e reuniões de alinhamento
+                </div>
+            </summary>
+            <ul class="como-funciona-detail">
+                <li>
+                    Reuniões de Supervisão e Atualização
+                </li>
+                <li>
+                    Aprovação das Entregas Parciais
+                </li>
+                <li>
+                    Análise de Desempenho do Projeto
+                </li>
+                <li>
+                    Aprovação Final do Site
+                </li>
+            </ul>
+        </details>
+        <details class="como-funciona-list">
+            <summary>
+                <div class="como-funciona-titulo">
+                    Hospedagem
+                </div>
+                <div class="como-funciona-subtitulo">
+                    Configuração do pacote de hospedagem e domínio do site
+                </div>
+            </summary>
+            <ul class="como-funciona-detail">
+                <li>
+                    Seleção do Pacote de Hospedagem
+                </li>
+                <li>
+                    Certificação de Segurança do Site
+                </li>
+                <li>
+                    Indicação de Procedimentos Regulatórios
+                </li>
+                <li>
+                    Endereçamento do Site na Web
+                </li>
+            </ul>
+        </details>
+        <details class="como-funciona-list">
+            <summary>
+                <div class="como-funciona-titulo">
+                    Acompanhamento
+                </div>
+                <div class="como-funciona-subtitulo">
+                    Pós venda, para possível ajustes ou manuntenção
+                </div>
+            </summary>
+            <ul class="como-funciona-detail">
+                <li>
+                    Auxílio ao Pacote de Hospedagem
+                </li>
+                <li>
+                    Análise de Desempenho em Funcionamento
+                </li>
+                <li>
+                    Período para Possível Ajustes
+                </li>
+                <li>
+                    Pesquisa e Satisfação
+                </li>
+            </ul>
+        </details>
+        <div class="orcamento">
+            <img src="assets/orcamento-1.svg">
+            <div class="orcamento-texto">
+                <p>Idealizou? Então vamos desenvolver essa ideia!</p>
+                <button class="orcamento-btn">
+                    <a href="#contato">Solicite um orçamento</a>
+                </button>
+            </div>
+            <img src="assets/orcamento-2.svg">
+        </div>
+    </section>
+
+
+
+    <!-- ----------------------------- -->
+
     <section id="contato">
-        <h2>Contato</h2>
+        <div class="contato-bg">
+            <div class="contato-parte1"> <!-- Parte esquerda, sem contar o formulário -->
+                <h2>Contato</h2>
+                <div class="contato-subtitulo">
+                    <p>Preencha o formulário para solicitar um orçamento,<br> tirar dúvidas, enviar elogios ou solicitar
+                        uma parceria!</p>
+                    <p>Ao enviar, você declara que leu e concordou com<br> nossa <a href="politicaDePrivacidade.html">política de privacidade</a> e o uso de cookies.</p>
+                </div>
+                <div class="contatos">
+                    <div class="contatos-email">
+                        <img src="./assets/email.svg" alt="E-mail">
+                        <p>contato@beetsjr.com.br</p>
+                    </div>
+                    <div class="contatos-tel">
+                        <img src="./assets/telefone.svg" alt="Telefone">
+                        <p>(15) 98136-7999</p>
+                    </div>
+                </div>
+                <div class="contato-social">
+                    <a href="https://www.instagram.com/beetsjr/" target="_blank"><img src="./assets/instagram-cinzaclaro.svg" alt="Instagram" class="contato-logo"></a>
+                    <a href="https://www.facebook.com/beetsjr" target="_blank"><img src="./assets/facebook-cinzaclaro.svg" alt="Facebook" class="contato-logo"></a>
+                    <a href="https://www.linkedin.com/company/beets-jr/" target="_blank"><img src="./assets/linkedin-cinzaclaro.svg" alt="Linkedin" class="contato-logo"></a>
+                </div>
+                <br>
+                <a href="https://wa.me/5515981367999" target="_blank">
+                    <div class="contato-btn">
+                        <div class="contato-whatsapp"></div>
+                        <p>Fale conosco</p>
+                    </div>
+                </a>
+            </div>
+            <div class="contato-parte2">
+                <div class="formurario-titulo">
+                    <img src="./assets/formulario.svg">
+                    <h3>Formulário</h3>
+                </div>
+                <div class="formulario">
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="contato-mensagem" name="mensagem" required></textarea>
+
+                        <div class="contato-enviar">
+                            <button type="submit" class="enviar-btn">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
     </section>
 
     <!-- Conteúdo do Footer -->
 
-    <footer>    
+    <footer>
         <nav id="menu-footer">
             <h3>Links rápidos</h3>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./quemSomos.html">Quem Somos</a></li>
+                <li><a href="./politicaDePrivacidade.html">Política de Privacidade</a></li>
             </ul>
         </nav>
 
@@ -79,25 +352,38 @@
                 <div>
                     <img src="./assets/logo-cores-invertida.svg" alt="Beets Jr" height="64">
                 </div>
-                
+
                 <div>
-                    <a href="./index.html"><h2>Beets Jr.</h2></a>
+                    <a href="./index.html">
+                        <h2>Beets Jr.</h2>
+                    </a>
                 </div>
             </div>
         </div>
-    
+
         <div id="contatos-footer">
             <h3>Informações de contato</h3>
             <p>Sorocaba - SP - Brasil</p>
             <div id="redes-sociais-footer">
-                <img src="./assets/instagram.svg" alt="Instagram" height="30">
-                <img src="./assets/facebook.svg" alt="Facebook" height="30">
-                <img src="./assets/GitHub.svg" alt="GitHub" height="30">
-                <img src="./assets/linkedin.svg" alt="Linkedin" height="30">
+                <a href="https://www.instagram.com/beetsjr/" target="_blank">
+                    <img src="./assets/instagram.svg" alt="Instagram" height="30">
+                </a>
+                <a href="https://www.facebook.com/beetsjr" target="_blank">
+                    <img src="./assets/facebook.svg" alt="Facebook" height="30">
+                </a>
+                <a href="https://github.com/Beets-Jr" target="_blank">
+                    <img src="./assets/GitHub.svg" alt="GitHub" height="30">
+                </a>
+                <a href="https://www.linkedin.com/company/beets-jr/" target="_blank">
+                    <img src="./assets/linkedin.svg" alt="Linkedin" height="30">
+                </a>
             </div>
         </div>
     </footer>
 
+
+    <script src="scripts/header.js"></script>
     <!-- Fim da página Home -->
 </body>
+
 </html>

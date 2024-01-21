@@ -1,0 +1,121 @@
+#como-funciona {
+  font-family: "Poppins";
+  width: 80%;
+  padding: 2rem 8rem;
+  /* background: #282828; */
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.como-funciona-top {
+  color: var(--verde);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.como-funciona-titulo {
+  font-weight: bold;
+  color: var(--beterraba-media);
+  font-size: 18px;
+}
+
+.como-funciona-subtitulo {
+  color: var(--beterraba-media);
+  font-weight: 300;
+}
+
+summary {
+  padding: 1rem;
+  display: block;
+  background: var(--cinza-claro);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+summary:before {
+  content: "";
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--verde);
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+.como-funciona-list {
+  padding-top: 27px;
+}
+
+/* THE MAGIC 🧙‍♀️ */
+.como-funciona-list[open]>summary:before {
+  transform: rotate(90deg);
+}
+
+
+.como-funciona-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.como-funciona-list>ul {
+  padding: 3rem;
+}
+
+.como-funciona-detail li {
+  list-style: inside;
+  color: white;
+  font-weight: 400;
+  padding-left: 3rem;
+}
+
+.como-funciona-detail {
+  border-radius: 16px;
+  background-color: var(--beterraba);
+  padding: 16px;
+}
+
+
+
+.orcamento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7rem 0 2rem 0;
+}
+
+.orcamento-texto {
+  text-align: center;
+}
+
+.orcamento-btn {
+  width: 50%;
+  height: 50px;
+  font-size: 18px;
+  background: var(--verde);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.orcamento-btn:hover {
+  background: var(--beterraba-media);
+  transition: 250ms linear;
+}
+
+.orcamento p {
+  font-size: 24px;
+}
+
+.orcamento a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
