@@ -1,9 +1,9 @@
 #qs-hero {
     margin-top: 5rem;
     width: 100%;
-    padding: 13.3rem 8rem;
+    padding: 13.3rem 8em;
     background-image: url("../../assets/bg-qs-hero-updated.svg");
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -49,5 +49,5 @@
 
 #botao-conheca:hover {
     background-color: var(--verde);
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
