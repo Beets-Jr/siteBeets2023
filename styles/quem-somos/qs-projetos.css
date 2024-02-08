@@ -16,15 +16,15 @@
 
 .visitar-site{
     border-radius: 3%;
-    font-weight: 1000;
+    font-weight: 400;
     font-size:16px;
     cursor: pointer;
     font-family: Poppins;
     color: white;
     text-align:center;
     position:fixed;
-    width:12%;
-	height:9%;
+    width:20%;
+	height:8%;
 	bottom:40px;
 	right:40px;
     box-shadow: 2px 2px 3px #999;
