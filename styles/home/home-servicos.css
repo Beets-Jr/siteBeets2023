@@ -123,7 +123,13 @@
     }
 
     .servicos-menores img {
+        padding-left: 0px;
         height: 32px;
+    }
+
+    .texto {
+        /*grid-column: 2 / span 1;*/
+        padding-left: 72px;
     }
 
     .item-1,
