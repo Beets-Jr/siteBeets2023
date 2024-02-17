@@ -122,6 +122,10 @@
         flex-direction: column;
     }
 
+    .servicos-menores img {
+        height: 32px;
+    }
+
     .item-1,
     .item-2,
     .item-3,
