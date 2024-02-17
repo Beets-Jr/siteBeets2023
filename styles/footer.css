@@ -59,6 +59,10 @@ footer a {
       text-align: center;
     }
 
+    #logo h2 {
+       font-size: 24px;
+    }
+
     #menu-footer {
         padding-top: 2rem;
     }
