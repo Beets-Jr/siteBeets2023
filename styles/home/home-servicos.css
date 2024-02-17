@@ -111,3 +111,35 @@
     font-size: 16px;
     font-weight: 300;
 }
+
+@media only screen and (max-width: 1024px) {
+    .servicos-container {
+        padding: 3rem 3rem;
+    }
+
+    .servicos-menores {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4 {
+        margin-right: 0;
+    }
+
+    .item-1,
+    .item-3 {
+        margin-bottom: 20px;
+    }
+
+    .orcamento img {
+        display: none;
+
+    }
+
+    .orcamento-texto {
+        text-align: center;
+    }
+}
