@@ -49,3 +49,62 @@
     width: 90%;
     height: 90%;
 }
+
+@media only screen and (max-width: 900px) {
+    #nossa-historia {
+        padding: 0;
+    }
+
+    .reconhecimentos-titulo {
+        padding: 0;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .reconhecimentos-itens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .item {
+        width: 80%;
+        text-align: center;
+        color: black;
+        margin: 2rem 0;
+    }
+
+    .reconhecimento-imagem {
+        width: 80%;
+    }
+
+    .item h3 {
+        font-size: 1.3rem;
+        padding: 1rem 0 0 0;
+    }
+
+    #reconhecimentos {
+        background: none;
+    }
+
+    #reconhecimentos::after {
+        content: "";
+        display: block;
+        background-image: url(../../assets/reconhecimento-fundo.svg);
+        background-position: 75%;
+        height: 400px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+    #reconhecimentos {
+        background-size: 100% 165%;
+    }
+
+    .item {
+        width: 40%;
+        color: var(--cinza-claro);
+    }
+}
