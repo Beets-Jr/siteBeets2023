@@ -48,3 +48,19 @@
 #privacidade a:visited {
     color: black;
 }
+
+@media only screen and (max-width: 500px) {
+    #privacidade h1 {
+        font-size: 48px;
+    }
+
+    #privacidade p, #privacidade ol{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #privacidade h2 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
