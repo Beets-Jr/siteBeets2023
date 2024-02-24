@@ -131,6 +131,12 @@ summary:before {
   .orcamento-texto {
       text-align: center;
   }
+
+  .orcamento-btn {
+    width: 80%;
+    height: 60px;
+    border-radius: 50px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
