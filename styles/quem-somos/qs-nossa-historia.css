@@ -15,8 +15,7 @@
     width: 50%;
 }
 
-.cards-1,
-.cards-2 {
+.cards-1, .cards-2 {
     display: grid;
     gap: 45px;
     padding-top: 60px;
@@ -61,7 +60,8 @@ a {
     padding: 27px;
     border-radius: 40px;
     background: var(--white, #FFF);
-    width: 270px;
+    width: 300px;
+    height: fit-content;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -69,7 +69,8 @@ a {
     padding: 25px;
     border-radius: 40px;
     background: var(--white, #FFF);
-    width: 270px;
+    width: 300px;
+    height: fit-content;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -77,7 +78,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    width: 300px;
+    height: 300px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 40px;
     background-color: rgba(155, 187, 89, 0.3);
@@ -126,6 +128,89 @@ button:hover {
     font-family: Poppins;
     font-size: 1.4rem;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 1400px) {
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    #nossa-historia {
+        padding: 2rem 5rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .cards-1, .cards-2 {
+        padding-top: 3rem;
+    }
+
+    .card {
+        padding: 2rem;
+        border-radius: 40px;
+        width: 350px;
+        height: fit-content;
+    }
+    
+    .card-valores {
+        padding: 2rem;
+        border-radius: 40px;
+        width: 350px;
+        height: fit-content;
+    }
+
+    .card-mascote {
+        width: 350px;
+        height: 250px;
+    }
+
+    .mascote {
+        height: 200px;
+    }
+
+    .card h3, .card-valores h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .card p, .card-valores p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .right-side {
+        width: 90%;
+    }
+     
+    .right-side .first-paragraph {
+        padding-top: 4rem;
+        margin-bottom: 2rem;
+    }
+     
+    .right-side p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    button {
+        padding: 1rem 3rem;
+    }
+    
+    .button-text {
+        font-size: 1rem;
+        font-weight: 400;
+    }
 }
 
 @media only screen and (max-width: 500px) {
