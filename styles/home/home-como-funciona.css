@@ -5,7 +5,6 @@
   /* background: #282828; */
   width: 100%;
   overflow: hidden;
-
 }
 
 .como-funciona-top {
@@ -118,4 +117,39 @@ summary:before {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .orcamento img {
+      display: none;
+  }
+
+  .orcamento {
+    justify-content: center;
+  }
+
+  .orcamento-texto {
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #como-funciona {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+
+  .orcamento-btn {
+    width: 80%;
+    height: 60px;
+    border-radius: 50px;
+  }
+
+  .como-funciona-detail {
+    padding: 1rem;
+  }
+
+  .como-funciona-detail li{
+    padding: 0.1rem 0rem;
+  }
 }
