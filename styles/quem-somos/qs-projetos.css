@@ -39,7 +39,8 @@ iframe:active {
 }
 
 .np-texto{
-    padding-bottom: 48px;
+    padding-top: 2rem;
+    padding-bottom: 24px;
     padding-left: 10%;
     color: var(--beterraba);
     font-size: 3rem;
@@ -56,4 +57,24 @@ iframe:active {
 .swiper-pagination{
     --swiper-pagination-color: var(--beterraba);
     --swiper-pagination-bullet-size: 15px;
+}
+
+/* mobile responsividade */
+@media only screen and (max-width: 1024px) {
+    .np-texto {
+        font-size: 40px;
+    }
+
+    .visitar-site{
+        padding: 0;
+        width:30%;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .visitar-site{
+        padding: 0;
+        width:40%;
+        height:8%;
+    }
 }
