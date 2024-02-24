@@ -58,7 +58,7 @@
     .reconhecimentos-titulo {
         padding: 0;
         text-align: center;
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .reconhecimentos-itens {
@@ -82,6 +82,11 @@
     .item h3 {
         font-size: 1.3rem;
         padding: 1rem 0 0 0;
+        font-weight: 500;
+    }
+
+    .item p {
+        font-weight: 100;
     }
 
     #reconhecimentos {
