@@ -38,7 +38,7 @@ a {
 }
 
 .right-side {
-   /* padding-left: 20px;*/
+    padding-left: 4rem;
     width: 50%;
 }
 
@@ -126,12 +126,34 @@ button:hover {
 .button-text {
     color: var(--white, #FFF);
     font-family: Poppins;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
+    .right-side {
+        padding-left: 20px;
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    .right-side .first-paragraph {
+        padding-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    button {
+        border-radius: 50px;
+        background: var(--beterraba-media, #890069);
+        padding: 16px 75px;
+        transition: background 0.3s ease;
+        margin-top: 30px;
+    }
     
+    .button-text {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
