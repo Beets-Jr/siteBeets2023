@@ -98,13 +98,13 @@
     }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1300px) {
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
     #reconhecimentos {
         background-size: 100% 165%;
     }
 
     .item {
         width: 40%;
-        color: var(--cinza-claro);
+        color: black;
     }
 }
