@@ -222,7 +222,7 @@ button:hover {
     .right-side p {
         font-size: 1.2rem;
         font-weight: 300;
-        text-align: justify;
+        text-align: left;
     }
 
     button {
@@ -237,13 +237,12 @@ button:hover {
 
 @media only screen and (max-width: 500px) {
     #nossa-historia {
-        padding: 4rem;
+        padding: 0 3rem;
     }
 
     #nossa-historia h2 {
         text-align: center;
-        font-size: 3rem;
-        padding-bottom: 90px;
+        font-size: 2rem;
     }
 
     .content {
@@ -251,77 +250,66 @@ button:hover {
         align-items: center;
     }
 
-    .left-side,
-    .right-side {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-side, .right-side {
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
-    .cards-1,
-    .cards-2 {
+    .cards-1, .cards-2 {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding-top: 30px;
+        gap: 1rem;
+        padding-top: 2rem;
         margin-right: 0;
     }
 
-    .card,
-    .card-valores,
-    .card-mascote {
+    .card, .card-valores, .card-mascote {
         align-self: center;
-        padding: 5rem;
-        width: 80%;
+        padding: 2rem;
+        width: 90%;
         height: auto;
-        margin-bottom: 70px;
     }
 
     .img-card {
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
     }
 
     .mascote {
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
     }
 
-    .card h3,
-    .card-valores h3 {
+    .card h3, .card-valores h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p, .card-valores p {
         font-size: 1rem;
     }
 
-    .card p,
-    .card-valores p {
-        font-size: 0.8rem;
-    }
-
-    .img-card,
-    .card h3,
-    .card p,
-    .card-valores h3,
-    .card-valores p,
-    .mascote {
-        margin-bottom: 20px;
-    }
-
-    .right-side {
-        width: 90%;
+    .right-side{
+        padding-left: 0;
+        margin-left: 0;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        margin-top: -100px;
     }
 
     .right-side p {
-        width: 90%;
-        font-size: 1.9rem;
-        line-height: 1.8;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
     }
 
-    button {
-        margin-top: 60px;
-        width: 70%;
+    .right-side .first-paragraph {
+        padding-top: 2rem;
     }
 }
