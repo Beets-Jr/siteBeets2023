@@ -1,5 +1,63 @@
 #qs-hero {
     margin-top: 5rem;
     width: 100%;
-    padding: 2rem 8rem;
+    padding: 13.3rem 8rem;
+    background-image: url("../../assets/bg-qs-hero-updated.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#qs-hero h1 {
+    color: white;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+    padding-bottom: 1rem;
+}
+
+#qs-hero h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 0.5rem;
+}
+
+#qs-hero h3 {
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.3125rem; /* 131.25% */
+}
+
+#botao-conheca {
+    color: var(--beterraba, #630043);
+    display: inline-flex;
+    padding: 0.56819rem 1.65719rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4735rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2.36744rem;
+    background: var(--white, #FFF);
+    transition-duration: 0.2s
+}
+
+#botao-conheca:hover {
+    background-color: var(--verde);
+    transition-duration: 0.2s;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 1024px) {
+    #qs-hero{
+        padding: 8rem 5rem;
+    }
+    /* Essa alteração ja ajusta o botão e
+    a imagem já não aparece */
 }

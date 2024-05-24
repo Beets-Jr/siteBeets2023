@@ -1,7 +1,95 @@
 #hero {
-    background-color: var(--cinza-claro);
+    background-color:white;
     margin-top: 5rem;
     width: 100%;
-    padding: 2rem 8rem;
+    padding: 1rem 1rem;
 }
 
+.background {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between; /* alinha os conteúdo aos extremos*/
+    width: 100%;
+    background-color: var(--beterraba);
+    border-radius: 0.7rem;
+    padding: 3rem 7rem;
+    gap: 0rem 5rem;
+}
+
+#hero h1 {
+    /*padding-bottom: 0.5rem;*/
+    padding-top: 2rem;
+    color: white;
+    font-size: 72px;
+}
+
+#hero h2 {
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--beterraba-clara);
+    font-size: 60px;
+}
+
+#hero p {
+    color: white;
+    padding-bottom: 3rem;
+    width: 40rem;
+    font-size: 14px;
+    font-weight: 90;
+}
+
+.botao-hero {
+    display: inline-flex;
+    padding: 12px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+    border-radius: 50px;
+    background: white;
+    color: var(--beterraba);
+}
+
+.botao-hero a{
+    text-decoration: none;
+    color: var(--beterraba);
+}
+
+.botao-hero:hover {
+    background: var(--verde);
+    transition-duration: 0.2s;
+}
+.imagem-hero {
+   padding: 0rem 8rem 0rem 0rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .imagem-hero{
+        display: none;
+    }
+
+    .background {
+        gap: 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .background{
+        padding: 3rem 3rem;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}

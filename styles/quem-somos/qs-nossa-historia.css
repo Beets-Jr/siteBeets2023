@@ -1,0 +1,315 @@
+#nossa-historia {
+    padding: 2rem 8rem;
+    flex-direction: column;
+}
+
+#nossa-historia h2 {
+    color: var(--verdin, #9BBB59);
+    font-size: 2.3rem;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+.left-side {
+    display: flex;
+    width: 50%;
+}
+
+.cards-1, .cards-2 {
+    display: grid;
+    gap: 45px;
+    padding-top: 60px;
+}
+
+.cards-1 {
+    margin-right: 45px;
+}
+
+.cards-2 {
+    padding-top: 120px;
+}
+
+.content {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right-side {
+    padding-left: 4rem;
+    width: 50%;
+}
+
+.right-side .first-paragraph {
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+
+.right-side p {
+    color: var(--black, #000);
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 27px;
+    border-radius: 40px;
+    background: var(--white, #FFF);
+    width: 300px;
+    height: fit-content;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-valores {
+    padding: 25px;
+    border-radius: 40px;
+    background: var(--white, #FFF);
+    width: 300px;
+    height: fit-content;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-mascote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 40px;
+    background-color: rgba(155, 187, 89, 0.3);
+}
+
+.card h3,
+.card-valores h3 {
+    color: var(--black, #000);
+    font-family: Poppins;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.card p,
+.card-valores p {
+    color: var(--black, #000);
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 250;
+}
+
+.img-card {
+    width: 27px;
+    height: 27px;
+}
+
+.mascote {
+    width: 200px;
+    height: 200px;
+}
+
+button {
+    border-radius: 50px;
+    background: var(--beterraba-media, #890069);
+    padding: 16px 75px;
+    transition: background 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: var(--verdin, #9BBB59);
+}
+
+.button-text {
+    color: var(--white, #FFF);
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1450px) {
+    .right-side {
+        padding-left: 20px;
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    .right-side .first-paragraph {
+        padding-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    button {
+        border-radius: 50px;
+        background: var(--beterraba-media, #890069);
+        padding: 16px 75px;
+        transition: background 0.3s ease;
+        margin-top: 30px;
+    }
+    
+    .button-text {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #nossa-historia {
+        padding: 2rem 5rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .cards-1, .cards-2 {
+        padding-top: 3rem;
+    }
+
+    .card {
+        padding: 2rem;
+        border-radius: 40px;
+        width: 350px;
+        height: fit-content;
+    }
+    
+    .card-valores {
+        padding: 2rem;
+        border-radius: 40px;
+        width: 350px;
+        height: fit-content;
+    }
+
+    .card-mascote {
+        width: 350px;
+        height: 250px;
+    }
+
+    .mascote {
+        height: 200px;
+    }
+
+    .card h3, .card-valores h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .card p, .card-valores p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .right-side {
+        width: 90%;
+    }
+     
+    .right-side .first-paragraph {
+        padding-top: 4rem;
+        margin-bottom: 2rem;
+    }
+     
+    .right-side p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    button {
+        padding: 1rem 3rem;
+    }
+    
+    .button-text {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #nossa-historia {
+        padding: 0 3rem;
+    }
+
+    #nossa-historia h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-1, .cards-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 2rem;
+        margin-right: 0;
+    }
+
+    .card, .card-valores, .card-mascote {
+        align-self: center;
+        padding: 2rem;
+        width: 90%;
+        height: auto;
+    }
+
+    .img-card {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mascote {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card h3, .card-valores h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p, .card-valores p {
+        font-size: 1rem;
+    }
+
+    .right-side{
+        padding-left: 0;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .right-side p {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .right-side .first-paragraph {
+        padding-top: 2rem;
+    }
+}

@@ -57,6 +57,11 @@ footer a {
       flex-direction: column;
       gap: 6rem;
       text-align: center;
+      padding: 2rem 3rem;
+    }
+
+    #logo h2 {
+       font-size: 24px;
     }
 
     #menu-footer {

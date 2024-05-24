@@ -14,7 +14,11 @@
 
     <link rel="stylesheet" href="./styles/quem-somos/qs-hero.css">
     <link rel="stylesheet" href="./styles/quem-somos/qs-historia.css">
+    <link rel="stylesheet" href="./styles/quem-somos/qs-nossa-historia.css">
     <link rel="stylesheet" href="./styles/quem-somos/qs-portifolio.css">
+    <link rel="stylesheet" href="./styles/quem-somos/qs-filiacao.css">
+    <link rel="stylesheet" href="./styles/quem-somos/qs-projetos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,21 +27,32 @@
 
 <body>
     <!-- Conteúdo do Header | Home-->
-    <header>  
+    <header>
         <div id="logo">
             <div>
                 <img src="./assets/logo-sem-fundo.svg" alt="Beets Jr." height="32">
             </div>
-            
+
             <div>
-                <a href="./index.html"><h1>Beets Jr.</h1></a>
+                <a href="./index.html">
+                    <h1>Beets Jr.</h1>
+                </a>
             </div>
         </div>
 
-        <nav id="menu">
-            <ul> 
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Quem Somos</a><div class="menu-line"></div></li>
+                <li><a href="#">Quem Somos</a>
+                    <div class="menu-line"></div>
+                </li>
+                <li><a href="./politicaDePrivacidade.html">Política de Privacidade</a></li>
             </ul>
         </nav>
     </header>
@@ -45,29 +60,158 @@
     <!-- Conteúdo da página Quem Somos -->
 
     <section id="qs-hero">
-        <h1>Quem Somos</h1>
+        <div id="qs-container">
+            <div id="qs-conteudo">
+                <h1>QUEM SOMOS</h1>
+                <h2>Conheça a Beets Jr.</h2>
+                <h3>Uma equipe apaixonada por tecnologia</h3>
+
+                <a href="#nossos-projs">
+                    <div id="botao-conheca">
+                        Conheça nossos projetos
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------- -->
+
+    <section id="nossos-projs">
+
+        <h2 class="np-texto">Nossos projetos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <button class="visitar-site" onclick="window.open('https://nucleoangelamartinbassetto.org.br/');">Visitar o site</button>
+                    <iframe src="https://nucleoangelamartinbassetto.org.br/" style="width:100%; height: 1000px;" frameborder="0" scrolling="no">
+                    </iframe>
+                </div>
+                <div class="swiper-slide">
+                    <button class="visitar-site" onclick="window.open('https://www.otimizaej.com.br/');">Visitar o site</button>
+                    <iframe src="https://www.otimizaej.com.br/" style="width:100%; height: 1000px;" frameborder="0" scrolling="no">
+                    </iframe>
+                </div>
+                <div class="swiper-slide">
+                    <button class="visitar-site" onclick="window.open('https://emvepjr.com/');">Visitar o site</button>
+                    <iframe src="https://emvepjr.com/" style="width:100%; height: 1000px;" frameborder="0" scrolling="no">
+                    </iframe>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
     </section>
 
     <!-- ----------------------------- -->
 
     <section id="nossa-historia">
         <h2>Nossa História</h2>
+        <div class="content">
+            <div class="cards-container">
+                <div class="left-side">
+                    <div class="cards-1">
+                        <div class="card">
+                            <img src="./assets/Group.svg" class="img-card" alt="missão">
+                            <h3>Missão</h3>
+                            <p>Nossa proposta é preparar estudantes de Ciência da Computação para o mercado de trabalho.</p>
+                        </div>
+                        <div class="card-valores">
+                            <img src="./assets/solar_shield-star-bold-duotone.svg" class="img-card" alt="valores">
+                            <h3>Valores</h3>
+                            <p>Ética, ambiente de trabalho saudável, comprometimento, inclusão, performance em serviços, transparência e valorização dos membros.</p>
+                        </div>
+                    </div>
+                    <div class="cards-2">
+                        <div class="card-mascote">
+                            <img src="./assets/8-bit_animated_Beth (1344x1408).gif" class="mascote" alt="beth">
+                        </div>
+                        <div class="card">
+                            <img src="./assets/octicon_goal-16.svg" class="img-card" alt="visão">
+                            <h3>Visão</h3>
+                            <p>Temos o objetivo de produzir soluções tecnológicas e se tornar referência no Movimento Empresa Júnior.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <p class="first-paragraph">Somos uma Empresa Júnior formada por alunos graduandos em Ciência da Computação na Universidade Federal de São Carlos - Campus Sorocaba.</p>
+                <p>Buscamos levar soluções ao mercado de trabalho, utilizando tecnologias e metodologias inovadoras para resolver problemas reais por meios computacionais.</p>
+                <button><a href="./index.html#servicos"><span class="button-text">Conheça nossos serviços</span></a></button>
+            </div>
+        </div>
     </section>
 
     <!-- ----------------------------- -->
 
-    <section id="portifolio">
-        <h2>Portifólio</h2>
+    <section id="filiacao">
+        <h2 class="filiacao-h2">Filiação</h2>
+
+        <div class="filiacao-div1"><img src="./assets/ufscar-logo.svg" alt="UFSCar">
+            <p class="filiacao-p1">Somos orientados por doutores da Universidade Federal de São Carlos, uma das 15 melhores universidades da América Latina, recebendo apoio de profissionais com larga experiência na área.</p>
+        </div>
+
+        <div class="filiacao-div2">
+            <p class="filiacao-p2">O Núcleo Campinas de Empresas Juniores (NuCa) é uma instância regional da Rede Paulista, com um total de 44 EJs afiliadas. A Beets Jr. se filiou ao NuCa em julho de 2020, onde iniciou sua imersão no MEJ Paulista.</p><img src="./assets/nuca-logo.svg" alt="NuCa">
+        </div>
+
+        <div class="filiacao-div1"><img src="./assets/fejesp-logo.svg" alt="FEJESP">
+            <p class="filiacao-p1">A Federação de Empresas Juniores do Estado de São Paulo é uma associação que representa e potencializa as EJs do Estado de São Paulo. A instância estadual representa o MEJ Paulista desde 1990.</p>
+        </div>
+
+        <div class="filiacao-div2">
+            <p class="filiacao-p2">Integração com o Movimento Empresa Júnior Brasileiro, conectados com EJs dos mais variados ramos de serviço em todo o país, em prol da evolução da prática empreendedora.</p><img src="./assets/brjunior-logo.svg" alt="Brasil Júnior">
+        </div>
+        <h2 class="filiacao-hashtag">#SejaUmBeeter</h2>
+    </section>
+
+    <!-- ----------------------------- -->
+
+    <section id="reconhecimentos">
+        <h3 class="reconhecimentos-titulo">Reconhecimentos</h3>
+        <div class="reconhecimentos-itens">
+            <div class="item">
+                <div class="reconhecimento-imagem">
+                    <img src="./assets/ej-evolucao.svg" class="img" alt="prêmio ej evolução">
+                </div>
+                <h3>EJ Evolução do PUF</h3>
+                <p>
+                    Em 2020, a Beets Jr. foi reconhecida como EJ Evolução do PUF do Núcleo Campinas no palco do Expoente (Encontro Regional).
+                </p>
+            </div>
+            <div class="item">
+                <div class="reconhecimento-imagem">
+                    <img src="./assets/ej-ninho.svg" class="img" alt="premio ej do ninho">
+                </div>
+                <h3>EJ do Ninho</h3>
+                <p>
+                    No Prêmio FEJESP 2020 fomos reconhecidos como EJ do Ninho do Núcleo Campinas, como EJ recém federada de destaque!
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Conteúdo do Footer -->
 
-    <footer>    
+    <footer>
         <nav id="menu-footer">
             <h3>Links rápidos</h3>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./quemSomos.html">Quem Somos</a></li>
+                <li><a href="./politicaDePrivacidade.html">Política de Privacidade</a></li>
             </ul>
         </nav>
 
@@ -76,25 +220,39 @@
                 <div>
                     <img src="./assets/logo-cores-invertida.svg" alt="Beets Jr" height="64">
                 </div>
-                
+
                 <div>
-                    <a href="./index.html"><h2>Beets Jr.</h2></a>
+                    <a href="./index.html">
+                        <h2>Beets Jr.</h2>
+                    </a>
                 </div>
             </div>
         </div>
-    
+
         <div id="contatos-footer">
             <h3>Informações de contato</h3>
             <p>Sorocaba - SP - Brasil</p>
             <div id="redes-sociais-footer">
-                <img src="./assets/instagram.svg" alt="Instagram" height="30">
-                <img src="./assets/facebook.svg" alt="Facebook" height="30">
-                <img src="./assets/GitHub.svg" alt="GitHub" height="30">
-                <img src="./assets/linkedin.svg" alt="Linkedin" height="30">
+                <a href="https://www.instagram.com/beetsjr/" target="_blank">
+                    <img src="./assets/instagram.svg" alt="Instagram" height="30">
+                </a>
+                
+                <a href="https://www.facebook.com/beetsjr" target="_blank">
+                    <img src="./assets/facebook.svg" alt="Facebook" height="30">
+                </a>
+               
+                <a href="https://www.linkedin.com/company/beets-jr/" target="_blank">
+                    <img src="./assets/linkedin.svg" alt="Linkedin" height="30">
+                </a>
             </div>
         </div>
     </footer>
 
+    <script src="scripts/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/qs-projetos.js"></script>
+
     <!-- Fim da página Quem Somos -->
 </body>
+
 </html>

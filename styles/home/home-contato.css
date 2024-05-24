@@ -1,3 +1,269 @@
 #contato {
     padding: 2rem 8rem;
+    color: var(--cinza-claro);
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.contato-bg {
+    background-color: var(--beterraba-media);
+    border-radius: 0.7rem;
+    padding: 3rem 7rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contato-parte1 {
+    width: 50%;
+}
+
+#contato h2 {
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 48px;
+}
+
+#contato p {
+    font-weight: 90;
+}
+
+.contato-subtitulo {
+    font-weight: 90;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contato-subtitulo p {
+    margin-bottom: 1rem;
+}
+
+.contato-subtitulo a:link {
+    color: var(--cinza-claro);
+}
+
+.contato-subtitulo a:visited {
+    color: var(--cinza-claro);
+}
+
+.contatos {
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.contatos div {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contatos-img {
+    margin-right: 1rem;
+}
+
+.contato-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 3rem;
+    padding-left: 10px;
+}
+
+.contato-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.contato-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--verde);
+    border-radius: 50px;
+    padding: 12px 35px;
+    gap: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: 250ms linear;
+}
+
+.contato-whatsapp {
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/whatsapp.svg');
+    background-size: cover;
+    display: block;
+    transition: 250ms linear;
+}
+
+.contato-btn:hover {
+    background: white;
+    color: var(--beterraba-media);
+    transition: 250ms linear;
+}
+
+.contato-btn:hover .contato-whatsapp {
+    background-image: url('../../assets/whatsapp-beterraba.svg');
+    transition: 250ms linear;
+}
+
+/* pt2 */
+.contato-parte2 {
+    background-color: var(--verde);
+    width: 33%;
+    height: 530px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.formurario-titulo {
+    display: inline-flex;
+    margin: 39px 0 20px 40px;
+}
+
+.formurario-titulo h3 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.formulario {
+    margin: 0 85px;
+    color: var(--cinza-escuro);
+}
+
+.formulario label {
+    font-size: 18px;
+}
+
+.formulario input,
+.contato-mensagem {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background-color: var(--verde-claro);
+}
+
+.contato-mensagem {
+    height: 55px;
+}
+
+.contato-enviar {
+    text-align: center;
+}
+
+.enviar-btn {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    height: 45px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.enviar-btn:hover {
+    color: white;
+    background: var(--beterraba-media);
+    transition: 250ms linear;
+}
+
+/* mobile */
+@media only screen and (max-width: 1024px) {
+    #contato {
+        padding: 0;
+    }
+
+    .contato-bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 0;
+        border-radius: 0;
+    }
+
+    .contatos-img, .contato-btn {
+        display: none;
+    }
+
+    .contato-formasdecontato {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 3rem 0;
+    }
+
+    .contatos {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato-social {
+        gap: 0px;
+        padding-left: 0;
+    }
+
+    .contato-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contato-parte2 {
+        width: 80%;
+        height: auto;
+    }
+    
+    .formurario-titulo {
+        margin: 50px 0;
+    }
+
+    .formulario label {
+        color: var(--beterraba);
+        font-weight: 600;
+    }
+
+    .formulario {
+        margin: 0 4rem;
+    }
+
+    .formulario input {
+        margin-bottom: 2rem;
+        height: 50px;
+    }
+
+    .contato-mensagem {
+        margin-bottom: 2rem;
+        height: 65px;
+    }
+
+    .formulario label {
+        display: block;
+        text-align: left;
+    }
+
+    .enviar-btn {
+        background: var(--beterraba-media);
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        height: 50px;
+        width: 50%;
+        border-radius: 50px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contato-parte2{
+        width: 90%;
+    }
 }

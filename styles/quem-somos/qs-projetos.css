@@ -1,0 +1,80 @@
+#nossos-projs{
+    /*background-image: url("..\\..\\assets\\fundo-portifolio.svg");*/
+    background-image: url("../../assets/Fundo-Portifolio.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    height: 1000px;
+}
+
+.swiper {
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+
+.visitar-site{
+    border-radius: 3%;
+    font-weight: 400;
+    font-size:16px;
+    cursor: pointer;
+    font-family: Poppins;
+    color: white;
+    text-align:center;
+    position:fixed;
+    width:20%;
+	height:8%;
+	bottom:40px;
+	right:40px;
+    box-shadow: 2px 2px 3px #999;
+}
+
+iframe {
+    pointer-events: none;
+}
+iframe:active {
+    pointer-events: auto;
+}
+
+.np-texto{
+    padding-top: 2rem;
+    padding-bottom: 24px;
+    padding-left: 10%;
+    color: var(--beterraba);
+    font-size: 3rem;
+    font-family: Poppins;
+    font-weight: 700;
+}
+.swiper-button-next{
+    --swiper-navigation-color: var(--beterraba);
+}
+.swiper-button-prev{
+    --swiper-navigation-color: var(--beterraba);
+}
+
+.swiper-pagination{
+    --swiper-pagination-color: var(--beterraba);
+    --swiper-pagination-bullet-size: 15px;
+}
+
+/* mobile responsividade */
+@media only screen and (max-width: 1024px) {
+    .np-texto {
+        font-size: 40px;
+    }
+
+    .visitar-site{
+        padding: 0;
+        width:30%;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .visitar-site{
+        padding: 0;
+        width:40%;
+        height:8%;
+    }
+}
