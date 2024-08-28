@@ -19,6 +19,18 @@ footer a {
     text-decoration: none;
 }
 
+footer p {
+    color: var(--cinza-claro);
+    font-weight: 200;
+}
+
+.linha-customizada {
+    border: none;
+    height: 0.5px;
+    background-color: white; /* Cor da linha */
+    margin: 8px 0; /* Espaçamento acima e abaixo da linha */
+}
+
 #menu-footer ul li a {
     display: block;
     text-decoration: none;
@@ -33,13 +45,9 @@ footer a {
 
 #logo-footer a h2 {
     color: var(--cinza-claro);
+    font-size: 48px;
 }
 
-#contatos-footer p {
-    color: var(--cinza-claro);
-    font-weight: 200;
-}
-  
 #redes-sociais-footer {
     display: flex;
     gap: 1rem;
