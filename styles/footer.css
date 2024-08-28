@@ -19,6 +19,10 @@ footer a {
     text-decoration: none;
 }
 
+footer p {
+    color: white;
+}
+
 #menu-footer ul li a {
     display: block;
     text-decoration: none;
