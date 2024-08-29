@@ -5,16 +5,16 @@
 }
 
 .contato-bg {
-    background-color: var(--beterraba-media);
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 3rem 3rem;
     display: flex;
     justify-content: space-around;
 }
 
 .contato-parte1 {
-    width: 700px;
+    width: 100%;
+    background-color: var(--beterraba-media);
+    margin-top: 20px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5rem 1rem 3rem 6rem;
 }
 
 #contato h2 {
@@ -38,6 +38,7 @@
     font-weight: 90;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    width: 80%;
 }
 
 .contato-subtitulo p {
@@ -119,15 +120,13 @@
     transition: 250ms linear;
 }
 
-/* pt2 */
+/* pt2 - formulário */
 .contato-parte2 {
     background-color: var(--verde);
-    width: 33%;
-    height: 530px;
-    margin-top: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 3rem 1rem;
 }
 
 .formurario-titulo {
@@ -136,18 +135,24 @@
 }
 
 .formurario-titulo h3 {
-    font-size: 20px;
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
     margin-left: 10px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .formulario {
-    margin: 0 85px;
+    margin: 0 70px;
+    background-color: white;
     color: var(--cinza-escuro);
+    padding: 3rem 4rem;
 }
 
 .formulario label {
     font-size: 18px;
+    font-weight: 200;
 }
 
 .formulario input,
@@ -155,9 +160,11 @@
     padding: 10px;
     width: 100%;
     height: 40px;
-    border-radius: 3px;
     margin-bottom: 15px;
-    background-color: var(--verde-claro);
+    border: 0.5px solid var(--cinza-escuro);
+
+    font-size: 16px;
+    font-family: Poppins;
 }
 
 .contato-mensagem {
@@ -165,23 +172,25 @@
 }
 
 .contato-enviar {
-    text-align: center;
+    text-align: left;
 }
 
 .enviar-btn {
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    width: 60%;
+    font-family: Poppins;
+    width: 10rem;
     height: 45px;
-    border-radius: 20px;
-    font-weight: 700;
+    border-radius: 10px;
+    font-weight: 300;
     cursor: pointer;
+    background-color: var(--beterraba-media);
+    color: white;
 }
 
 .enviar-btn:hover {
     color: white;
-    background: var(--beterraba-media);
-    transition: 250ms linear;
+    font-weight: 600;
+    background: var(--verde);
 }
 
 /* mobile */
