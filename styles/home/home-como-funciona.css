@@ -7,10 +7,11 @@
   overflow: hidden;
 }
 
-.como-funciona-top {
+#como-funciona h2{
   color: var(--verde);
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 200;
+  padding-bottom: 15px;
 }
 
 .como-funciona-titulo {
