@@ -8,18 +8,17 @@
     display: flex;
     align-content: space-between;
     justify-content: space-between; /* alinha os conteúdo aos extremos*/
-    width: 100%;
     background-color: var(--beterraba);  
     border-radius: 0.7rem; 
-    padding: 128px 175px;
+    padding: 5rem 8rem;
 }
 
 #hero h1 {
     padding-bottom: 3rem;
     padding-top: 2rem;
     color: white;
-    font-size: 72px;
-    width: 433px;
+    font-size: 4rem;
+    width: 27rem;
 }
 
 #hero p {
@@ -54,34 +53,50 @@
     font-weight: 400;
 }
 .imagem-hero {
-   width: 607px;
+    width: 100%;
+    max-width: 37rem;
+    height: auto;
+    object-fit: cover;
 }
 
+
 @media only screen and (max-width: 1024px) {
-    .imagem-hero{
+    .background {
+        padding: 3rem 7rem;
+    }
+
+    .imagem-hero {
         display: none;
     }
 
-    .background {
-        gap: 0;
-    }
-
-    #hero h2 {
-        font-size: 2rem;
+    #hero h1 {
+        font-size: 3.5rem;
+        width:auto;
     }
 
     #hero p {
         width: 100%;
+        font-size: 18px;
+    }
+
+    .botao-hero {
+        margin-bottom: 4rem;
+        font-weight: 400;
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 800px) {
     .background{
-        padding: 3rem 3rem;
+        padding: 2rem 3rem;
     }
 
     #hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+        font-size: 3.5rem;
+        width:auto;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
     }
 }
